@@ -1,0 +1,384 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"k",
+				"keygen\t<keygen>"
+			],
+			[
+				"s",
+				"showOne〔function〕"
+			],
+			[
+				"sho",
+				"showAll〔function〕"
+			],
+			[
+				"A",
+				"ApiResponser"
+			],
+			[
+				"strto",
+				"strtolower〔function〕"
+			],
+			[
+				"fun",
+				"function"
+			],
+			[
+				"user",
+				"$user〔variable〕"
+			],
+			[
+				"verif",
+				"verified"
+			],
+			[
+				"veri",
+				"verification_token"
+			],
+			[
+				"U",
+				"User"
+			],
+			[
+				"reques",
+				"$request〔variable〕"
+			],
+			[
+				"mt",
+				"mt_rand"
+			],
+			[
+				"us",
+				"$usersQuantity〔variable〕"
+			],
+			[
+				"selle",
+				"$seller〔variable〕"
+			],
+			[
+				"sell",
+				"seller_id"
+			],
+			[
+				"ra",
+				"randomElement〔function〕"
+			],
+			[
+				"fa",
+				"faker"
+			],
+			[
+				"nu",
+				"numberBetween〔function〕"
+			],
+			[
+				"random",
+				"randomElement"
+			],
+			[
+				"funct",
+				"functionCallback〔function〕"
+			],
+			[
+				"fu",
+				"fun\tfunction …"
+			],
+			[
+				"for",
+				"foreign"
+			],
+			[
+				"de",
+				"default"
+			],
+			[
+				"belongs",
+				"belongsTo〔function〕"
+			],
+			[
+				"bel",
+				"belongsTo〔function〕"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"contents": "<!DOCTYPE html>\n<html>\n<head>\n\t<meta charset=\"utf-8\">\n\t<meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">\n\t<title></title>\n\t<link rel=\"stylesheet\" href=\"\">\n</head>\n<body>\n\n</body>\n</html>",
+			"file": "resources/views/list.blade.php",
+			"file_size": 0,
+			"file_write_time": 131671732361957479,
+			"settings":
+			{
+				"buffer_size": 190,
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"last_filter": "Package Control: ",
+		"selected_items":
+		[
+			[
+				"Package Control: ",
+				"Package Control: List Packages"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 540.0
+	},
+	"console":
+	{
+		"height": 63.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '6f4c264a24d933ce70df5dedcf1dcaee' + 'ebe013ee18cced0ef93d5f746d80ef60'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/C/wamp64/www/laravelajax",
+		"/C/wamp64/www/laravelajax/resources",
+		"/C/wamp64/www/laravelajax/resources/views"
+	],
+	"file_history":
+	[
+		"/C/wamp64/www/restapilaravel/app/Http/Controllers/ApiController.php",
+		"/C/wamp64/www/restapilaravel/app/Traits/ApiResponser.php",
+		"/C/wamp64/www/restapilaravel/app/Http/Controllers/Buyer/BuyerController.php",
+		"/C/wamp64/www/restapilaravel/app/Http/Controllers/Seller/SellerController.php",
+		"/C/wamp64/www/restapilaravel/_ide_helper.php",
+		"/C/wamp64/www/restapilaravel/app/Http/Controllers/Category/CategoryController.php",
+		"/C/wamp64/www/restapilaravel/app/User.php",
+		"/C/wamp64/www/restapilaravel/app/Http/Controllers/Transaction/TransactionController.php",
+		"/C/wamp64/www/restapilaravel/app/Http/Controllers/Product/ProductController.php",
+		"/C/wamp64/www/restapilaravel/vendor/laravel/framework/src/Illuminate/Notifications/Notifiable.php",
+		"/C/wamp64/www/restapilaravel/app/Seller.php",
+		"/C/wamp64/www/restapilaravel/database/seeds/DatabaseSeeder.php",
+		"/C/wamp64/www/restapilaravel/composer.json",
+		"/C/wamp64/www/restapilaravel/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Concerns/HasAttributes.php",
+		"/C/wamp64/www/restapilaravel/database/migrations/2014_10_12_000000_create_users_table.php",
+		"/C/wamp64/www/restapilaravel/database/factories/ModelFactory.php",
+		"/C/wamp64/www/restapilaravel/database/migrations/2017_02_17_034324_category_product_table.php",
+		"/C/wamp64/www/restapilaravel/database/migrations/2017_02_15_060654_create_transactions_table.php",
+		"/C/wamp64/www/restapilaravel/database/migrations/2017_02_15_060644_create_products_table.php",
+		"/C/wamp64/www/restapilaravel/database/migrations/2017_02_15_060634_create_categories_table.php",
+		"/C/wamp64/www/restapilaravel/database/migrations/2018_03_29_155256_create_categories_table.php",
+		"/C/wamp64/www/restapilaravel/database/migrations/2018_03_30_213957_create_category_product_table.php",
+		"/C/wamp64/www/restapilaravel/database/migrations/2018_03_29_155443_create_products_table.php",
+		"/C/wamp64/www/restapilaravel/database/migrations/2018_03_29_155404_create_transactions_table.php",
+		"/C/wamp64/www/restapilaravel/test2.php",
+		"/C/wamp64/www/restapilaravel/routes/api.php",
+		"/C/wamp64/www/restapilaravel/app/Product.php",
+		"/C/wamp64/www/restapilaravel/app/Providers/AppServiceProvider.php",
+		"/C/wamp64/www/restapilaravel/config/app.php",
+		"/C/wamp64/www/restapilaravel/app/Transaction.php",
+		"/C/wamp64/www/restapilaravel/app/Category.php",
+		"/C/wamp64/www/restapilaravel/app/Buyer.php",
+		"/C/wamp64/www/restapilaravel/vendor/laravel/framework/src/Illuminate/Support/helpers.php",
+		"/C/wamp64/www/restapilaravel/.env",
+		"/C/wamp64/www/restapilaravel/app/Providers/RouteServiceProvider.php",
+		"/C/wamp64/www/restapilaravel/app/Http/Controllers/User/UserController.php",
+		"/C/wamp64/www/restapilaravel/routes/web.php",
+		"/C/Users/Stevan/AppData/Roaming/Sublime Text 3/Packages/User/PHP Companion.sublime-settings",
+		"/C/wamp64/www/restapilaravel/test.php",
+		"/C/Users/Stevan/AppData/Roaming/Sublime Text 3/Packages/PHP Companion/PHP Companion.sublime-settings",
+		"/C/wamp64/www/restapilaravel/test.text",
+		"/C/wamp64/www/restapilaravel/vendor/laravel/framework/src/Illuminate/Notifications/HasDatabaseNotifications.php",
+		"/C/wamp64/www/restapilaravel/vendor/laravel/framework/src/Illuminate/Foundation/Auth/User.php",
+		"/C/wamp64/www/restapilaravel/.env.example",
+		"/C/wamp64/www/restapilaravel/Homestead.yaml"
+	],
+	"find":
+	{
+		"height": 0.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "resources/views/list.blade.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 190,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								174,
+								174
+							]
+						],
+						"settings":
+						{
+							"SL.14.region_keys":
+							[
+							],
+							"SL.62.region_keys":
+							[
+							],
+							"auto_complete": false,
+							"open_with_edit": true,
+							"syntax": "Packages/PHP/PHP.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 40.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.SublimeLinter":
+	{
+		"height": 0.0
+	},
+	"output.SublimeLinter Messages":
+	{
+		"height": 127.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "laravelajax.sublime-project",
+	"replace":
+	{
+		"height": 0.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 422.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
