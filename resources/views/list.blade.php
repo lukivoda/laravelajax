@@ -16,34 +16,37 @@
      <div class="col-lg-offset-3 col-lg-6">
          <div class="panel panel-default">
              <div class="panel-heading">
-                 <h3 class="panel-title">List of todos <a data-toggle="modal" data-target="#myModal" class="pull-right" href=""><i class="fa fa-plus "> </i></a></h3>
+                 <h3 class="panel-title">List of todos <a  id="addNew" data-toggle="modal" data-target="#myModal" class="pull-right" href=""><i class="fa fa-plus "> </i></a></h3>
              </div>
              <div class="panel-body">
                  <ul class="list-group">
-                     <li class="list-group-item">Cras justo odio</li>
-                     <li class="list-group-item">Dapibus ac facilisis in</li>
-                     <li class="list-group-item">Morbi leo risus</li>
-                     <li class="list-group-item">Porta ac consectetur ac</li>
-                     <li class="list-group-item">Vestibulum at eros</li>
+                     <li data-toggle="modal" data-target="#myModal" class="list-group-item ourItem">Cras justo odio</li>
+                     <li data-toggle="modal" data-target="#myModal" class="list-group-item ourItem">Dapibus ac facilisis in</li>
+                     <li data-toggle="modal" data-target="#myModal" class="list-group-item ourItem">Morbi leo risus</li>
+                     <li data-toggle="modal" data-target="#myModal" class="list-group-item ourItem">Porta ac consectetur ac</li>
+                     <li data-toggle="modal" data-target="#myModal" class="list-group-item ourItem">Vestibulum at eros</li>
                  </ul>
              </div>
          </div>
      </div>
 
-        <!-- Modal -->
+        <!--  -->
         <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+                        <h4 class="modal-title" id="title" id="myModalLabel">Add new item</h4>
                     </div>
                     <div class="modal-body">
-                        Some content
+                        <div class="form-group">
+                            <input type="text" id="addItem" name="addItem" class="form-control" placeholder="Write item here">
+                        </div>
                     </div>
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                        <button type="button" class="btn btn-primary">Save changes</button>
+                        <button style="display: none" id="deleteBtn"   type="button" class="btn btn-danger" >Delete</button>
+                        <button style="display: none" id="saveBtn" type="button" class="btn btn-primary">Save changes</button>
+                        <button type="button" id="addBtn" class="btn btn-success">Add item</button>
                     </div>
                 </div>
             </div>
@@ -58,5 +61,27 @@
 
 <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script>
+   $(document).ready(function(){
+    $(".ourItem").each(function(){
+      $(this).on("click",function(event){
+          var text = $(this).text();
+          $("#title").text("Edit item");
+         $("#addItem").val(text);
+         $("#saveBtn,#deleteBtn").show();
+         $("#addBtn").hide();
+      });
+    });
+
+       $("#addNew").on("click",function(event){
+               $("#title").text("Add new item");
+               $("#addItem").val('');
+               $("#saveBtn,#deleteBtn").hide();
+               $("#addBtn").show();
+           });
+
+
+   });
+</script>
 </body>
 </html>   
