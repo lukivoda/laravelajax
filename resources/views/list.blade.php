@@ -41,6 +41,7 @@
                     <div class="modal-body">
                         <div class="form-group">
                             <input type="text" id="addItem" name="addItem" class="form-control" placeholder="Write item here">
+                            {{csrf_field()}}
                         </div>
                     </div>
                     <div class="modal-footer">
@@ -79,6 +80,16 @@
                $("#saveBtn,#deleteBtn").hide();
                $("#addBtn").show();
            });
+
+
+       $("#addBtn").click(function(event){
+           var text = $("#addItem").val();
+           //console.log(text);
+           $.post('list', {'text':text,'_token':$('input[name=_token]').val()} ,function (data) {
+               console.log(data);
+           });
+       });
+
 
 
    });
