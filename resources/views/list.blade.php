@@ -8,12 +8,18 @@
     <title>Ajax todo list</title>
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.css">
 </head>
 <body>
 <br>
 <div class="container">
     <div class="row">
-     <div class="col-lg-offset-3 col-lg-6">
+        <div class="col-sm-5 col-xs-12">
+            <input type="text" class="form-control" name="searchItem" id="searchItem" placeholder="Search for...">
+        </div><!-- /input-group -->
+
+
+     <div class="col-sm-7 col-xs-12">
          <div class="panel panel-default">
              <div class="panel-heading">
                  <h3 class="panel-title">List of todos <a  id="addNew" data-toggle="modal" data-target="#myModal" class="pull-right" href=""><i class="fa fa-plus "> </i></a></h3>
@@ -29,7 +35,8 @@
              </div>
          </div>
      </div>
-
+    </div>
+</div>
         <!--  -->
         <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
             <div class="modal-dialog" role="document">
@@ -55,7 +62,7 @@
         </div>
 
 
-    </div>
+
 </div>
 
 
@@ -63,6 +70,7 @@
 
 <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.js"></script>
 <script>
    $(document).ready(function(){
        //because we are using dynamically generated elements we need on() function on document model
@@ -130,6 +138,11 @@
          });
      });
 
+       $( function() {
+           $("#searchItem").autocomplete({
+               source: "http://www.laravelajax.com/search"
+           });
+       });
 
 
 
