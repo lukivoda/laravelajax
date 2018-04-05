@@ -22,7 +22,7 @@
                  <ul id="items" class="list-group">
                      @foreach($items as $item)
 
-                     <li data-toggle="modal" data-target="#myModal" class="list-group-item ourItem">{{$item->item}}</li>
+                     <li style="cursor: pointer;color: #768fa4" data-toggle="modal" data-target="#myModal" class="list-group-item ourItem">{{$item->item}}</li>
                      <input type="hidden" id="itemId" value="{{$item->id}}" >
                      @endforeach
                  </ul>
@@ -76,7 +76,6 @@
               $("#addBtn").hide();
               //setting the value of the hidden input placed in the modal
               $("#id").val(id);
-              console.log(id);
           });
 
 
@@ -88,22 +87,22 @@
            $("#addBtn").show();
        });
 
-       $("#addNew").on("click",function(){
-               $("#title").text("Add new item");
-               $("#addItem").val('');
-               $("#saveBtn,#deleteBtn").hide();
-               $("#addBtn").show();
-           });
 
    // adding items
        $("#addBtn").click(function(){
            var text = $("#addItem").val();
-           $.post('list', {'text':text,'_token':$('input[name=_token]').val()} ,function (data) {
-              // $("#myModal").modal('toggle');
-               //refreshing only part of the page(specific id only)-use empty space in the string
-               $("#items").load(location.href+ " #items");
-               console.log(data);
-           });
+           if(text  == ''){
+               alert("Input field must be filled")
+           }else{
+               text = $.trim(text);
+               $.post('list', {'text':text,'_token':$('input[name=_token]').val()} ,function (data) {
+                   // $("#myModal").modal('toggle');
+                   //refreshing only part of the page(specific id only)-use empty space in the string
+                   $("#items").load(location.href+ " #items");
+                   console.log(data);
+               });
+           }
+
        });
 
 //deleting items
@@ -118,6 +117,19 @@
            });
 
        });
+
+  //saving items
+     $("#saveBtn").click(function(){
+         var id = $("#id").val();
+         var text = $("#addItem").val();
+         $.post('update', {'id':id,'text':text,'_token':$('input[name=_token]').val()} ,function (data) {
+             // $("#myModal").modal('toggle');
+             //refreshing only part of the page(specific id only)-use empty space in the string
+             $("#items").load(location.href+ " #items");
+             console.log(data);
+         });
+     });
+
 
 
 

@@ -18,14 +18,21 @@ class ListController extends Controller
         $item->item = $request->text;
         $item->save();
          return 'Done';
+         }
 
+    public function update(Request $request) {
+        $item = Item::find($request->id);
+        $item->item = $request->text;
+        $item->save();
     }
+
 
 
     public function delete(Request $request) {
         $id = $request->id;
        $item = Item::find($id);
        $item->delete();
+       }
 
-    }
+
 }
