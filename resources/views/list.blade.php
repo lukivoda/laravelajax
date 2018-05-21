@@ -140,7 +140,7 @@
 
        $( function() {
            $("#searchItem").autocomplete({
-               source: "http://www.laravelajax.com/search"
+               source: "/list"
            });
        });
 
