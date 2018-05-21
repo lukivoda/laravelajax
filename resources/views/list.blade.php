@@ -140,7 +140,7 @@
 
        $( function() {
            $("#searchItem").autocomplete({
-               source: "https://weblaravel.herokuapp.com/list"
+               source: "https://weblaravel.herokuapp.com/search"
            });
        });
 
